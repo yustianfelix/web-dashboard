@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Espresso Beans (1kg)",
+    "status": "In Stock",
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "name": "Pour Over Kits",
+    "status": "In Stock",
+    "inStock": true
+  },
+  {
+    "id": 3,
+    "name": "Ceramic Mugs",
+    "status": "Low Stock",
+    "inStock": false
+  },
+  {
+    "id": 4,
+    "name": "Cold Brew Filters",
+    "status": "In Stock",
+    "inStock": true
+  }
+]

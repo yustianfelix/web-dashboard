@@ -1,3 +1,5 @@
+import products from '../data/products.json';
+
 export default function Dashboard() {
     return (
         <main className="max-w-4xl mx-auto px-6 pb-24">
@@ -15,22 +17,20 @@ export default function Dashboard() {
                 <h2 className="text-3xl font-bold mb-8">What We Sell</h2>
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                     <ul className="space-y-4 text-gray-600">
-                        <li className="flex items-center justify-between border-b pb-3 border-gray-50">
-                            <span className="font-medium text-gray-800">Espresso Beans (1kg)</span>
-                            <span className="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full font-medium">In Stock</span>
-                        </li>
-                        <li className="flex items-center justify-between border-b pb-3 border-gray-50">
-                            <span className="font-medium text-gray-800">Pour Over Kits</span>
-                            <span className="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full font-medium">In Stock</span>
-                        </li>
-                        <li className="flex items-center justify-between border-b pb-3 border-gray-50">
-                            <span className="font-medium text-gray-800">Ceramic Mugs</span>
-                            <span className="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full font-medium">Low Stock</span>
-                        </li>
-                        <li className="flex items-center justify-between">
-                            <span className="font-medium text-gray-800">Cold Brew Filters</span>
-                            <span className="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full font-medium">In Stock</span>
-                        </li>
+                        {products.map((product) => (
+                            <li key={product.id} className="flex items-center justify-between border-b pb-3 border-gray-50 last:border-0 last:pb-0">
+                                <span className="font-medium text-gray-800">{product.name}</span>
+                                <span
+                                    className={`text-xs px-3 py-1 rounded-full font-medium ${
+                                        product.inStock
+                                            ? 'bg-green-100 text-green-800'
+                                            : 'bg-yellow-100 text-yellow-800'
+                                    }`}
+                                >
+                  {product.status}
+                </span>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </section>
