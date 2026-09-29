@@ -1,0 +1,11 @@
+{
+  "title": "Store Location",
+  "subtitle": "Jakarta Main Headquarters",
+  "address": [
+    "Jl. Merdeka No. 45",
+    "Jakarta Selatan, 12345",
+    "Indonesia"
+  ],
+  "operatingHours": "Monday - Saturday, 08:00 - 20:00 WIB",
+  "mapsUrl": "https://maps.google.com/?q=Jakarta"
+}
