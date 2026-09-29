@@ -1,7 +1,9 @@
 {
   "name": "Budi Santoso",
-  "role": "Primary Contact & Store Manager",
+  "role": "Head of Inventory Operations",
   "initials": "BS",
   "email": "budi.santoso@examplestore.com",
-  "phone": "+62 812-3456-7890"
+  "phone": "+62 812-3456-7890",
+  "responseTime": "Replies in ~2 minutes",
+  "statusBadge": "Online"
 }

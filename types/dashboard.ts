@@ -3,6 +3,8 @@ export interface Product {
   name: string;
   status: string;
   inStock: boolean;
+  category?: string;
+  stockCount?: number;
 }
 
 export interface ContactInfo {
@@ -11,6 +13,8 @@ export interface ContactInfo {
   initials: string;
   email: string;
   phone: string;
+  responseTime?: string;
+  statusBadge?: string;
 }
 
 export interface LocationInfo {
@@ -19,4 +23,6 @@ export interface LocationInfo {
   address: string[];
   operatingHours: string;
   mapsUrl: string;
+  timezone?: string;
+  status?: string;
 }
