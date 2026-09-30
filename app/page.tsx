@@ -1,26 +1,31 @@
 import Dashboard from "../components/Dashboard";
 import { Store, ArrowRight } from "lucide-react";
+import packageInfo from "../package.json";
+
+function InstagramIcon({ className = "size-3.5" }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+    </svg>
+  );
+}
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-50/70 dark:bg-slate-950 font-sans text-slate-900 dark:text-slate-100 relative selection:bg-blue-600 selection:text-white">
-      {/* SaaS Subtle Grid & Radial Glow Background */}
-      <div
-        className="fixed inset-0 -z-10 pointer-events-none overflow-hidden opacity-40 dark:opacity-20"
-        aria-hidden="true"
-        style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(148, 163, 184, 0.25) 1px, transparent 0)`,
-          backgroundSize: "32px 32px",
-        }}
-      />
-      <div className="fixed inset-0 -z-10 pointer-events-none overflow-hidden" aria-hidden="true">
-        <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[1000px] h-[550px] bg-gradient-to-b from-blue-200/40 via-sky-100/25 to-transparent blur-3xl opacity-70 dark:opacity-30" />
-        <div className="absolute top-[45rem] -left-40 w-96 h-96 bg-indigo-100/40 dark:bg-indigo-900/20 rounded-full blur-3xl" />
-        <div className="absolute top-[75rem] -right-40 w-96 h-96 bg-emerald-100/30 dark:bg-emerald-900/20 rounded-full blur-3xl" />
-      </div>
-
+    <div className="min-h-screen bg-white font-sans text-slate-900 dark:bg-slate-950 dark:text-slate-100 relative selection:bg-blue-600 selection:text-white">
       {/* Modern SaaS Header Navbar */}
-      <header className="sticky top-0 z-50 bg-white/75 dark:bg-slate-900/75 backdrop-blur-xl border-b border-slate-200/80 dark:border-slate-800 shadow-[0_1px_8px_0_rgba(15,23,42,0.03)]">
+      <header className="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl border-b border-slate-200/80 dark:border-slate-800 shadow-[0_1px_8px_0_rgba(15,23,42,0.03)]">
         <div className="max-w-5xl mx-auto px-6 h-16 flex justify-between items-center">
           {/* Logo & Brand */}
           <div className="flex items-center gap-3">
@@ -78,7 +83,7 @@ export default function Home() {
       <Dashboard />
 
       {/* Modern SaaS Footer */}
-      <footer className="border-t border-slate-200/80 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 backdrop-blur-md">
+      <footer className="border-t border-slate-200/80 dark:border-slate-800 bg-white dark:bg-slate-900">
         <div className="max-w-5xl mx-auto px-6 py-12 flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-slate-500">
           <div className="flex items-center gap-2.5">
             <div className="size-6 rounded-lg bg-blue-600 text-white flex items-center justify-center">
@@ -86,7 +91,15 @@ export default function Home() {
             </div>
             <span className="font-semibold text-slate-800 dark:text-slate-200">StoreDash SaaS</span>
             <span>•</span>
-            <span>Enterprise Inventory Platform</span>
+            <a
+              href="https://instagram.com/storedash"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 hover:text-slate-900 dark:hover:text-slate-100 transition-colors"
+            >
+              <InstagramIcon className="size-3.5 text-pink-500" />
+              <span className="font-medium text-slate-700 dark:text-slate-300">@storedash</span>
+            </a>
           </div>
 
           <div className="flex items-center gap-2">
@@ -96,7 +109,12 @@ export default function Home() {
             </span>
           </div>
 
-          <p>© {new Date().getFullYear()} StoreDash Inc. Powered by HeroUI v3.</p>
+          <div className="flex items-center gap-2.5">
+            <p>© {new Date().getFullYear()} StoreDash Inc. Powered by HeroUI v3.</p>
+            <span className="font-mono text-[10px] px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 border border-slate-200/80 dark:border-slate-700/80 font-medium">
+              v{packageInfo.version}
+            </span>
+          </div>
         </div>
       </footer>
     </div>
