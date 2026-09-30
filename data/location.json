@@ -1,0 +1,13 @@
+{
+  "title": "Store Location",
+  "subtitle": "Jakarta Headquarters & Distribution Hub",
+  "address": [
+    "Jl. Merdeka No. 45",
+    "Jakarta Selatan, 12345",
+    "Indonesia"
+  ],
+  "operatingHours": "Monday - Saturday, 08:00 - 20:00 WIB",
+  "timezone": "Asia/Jakarta (UTC+7)",
+  "status": "Operational",
+  "mapsUrl": "https://maps.google.com/?q=Jakarta"
+}

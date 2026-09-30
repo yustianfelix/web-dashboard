@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Espresso Beans (1kg)",
+    "status": "In Stock",
+    "inStock": true,
+    "category": "Coffee Supply",
+    "stockCount": 142
+  },
+  {
+    "id": 2,
+    "name": "Pour Over Kits",
+    "status": "In Stock",
+    "inStock": true,
+    "category": "Brew Equipment",
+    "stockCount": 48
+  },
+  {
+    "id": 3,
+    "name": "Ceramic Mugs",
+    "status": "Low Stock",
+    "inStock": false,
+    "category": "Merchandise",
+    "stockCount": 6
+  },
+  {
+    "id": 4,
+    "name": "Cold Brew Filters",
+    "status": "In Stock",
+    "inStock": true,
+    "category": "Accessories",
+    "stockCount": 85
+  }
+]
