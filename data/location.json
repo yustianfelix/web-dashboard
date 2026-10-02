@@ -1,13 +1,13 @@
 {
-  "title": "Store Location",
-  "subtitle": "Jakarta Headquarters & Distribution Hub",
+  "title": "Roastery & Flagship Cafe",
+  "subtitle": "Jakarta Tasting Room & Brew Bar",
   "address": [
-    "Jl. Merdeka No. 45",
-    "Jakarta Selatan, 12345",
+    "Jl. Senopati No. 45",
+    "Kebayoran Baru, Jakarta Selatan, 12190",
     "Indonesia"
   ],
-  "operatingHours": "Monday - Saturday, 08:00 - 20:00 WIB",
+  "operatingHours": "Monday - Sunday, 07:00 - 22:00 WIB",
   "timezone": "Asia/Jakarta (UTC+7)",
-  "status": "Operational",
+  "status": "Brewing Live",
   "mapsUrl": "https://maps.google.com/?q=Jakarta"
 }
