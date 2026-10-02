@@ -2,18 +2,68 @@
 @import "@heroui/styles";
 
 :root {
-  --background: #ffffff;
-  --foreground: #0f172a;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #090d16;
-    --foreground: #f8fafc;
-  }
+  --background: #fcf9f4;
+  --foreground: #26160d;
 }
 
 body {
-  background-color: var(--background);
+  background-color: #fcf9f4;
   color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Light warm cafe ambiance with organic coffee roast contours */
+.cafe-light-bg {
+  background-color: #fbf8f3;
+  background-image:
+    radial-gradient(ellipse 70% 40% at 50% -5%, rgba(217, 119, 6, 0.14) 0%, rgba(245, 158, 11, 0.06) 45%, transparent 75%),
+    radial-gradient(circle at 85% 25%, rgba(180, 83, 9, 0.05) 0%, transparent 45%),
+    radial-gradient(circle at 15% 55%, rgba(217, 119, 6, 0.04) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(146, 64, 14, 0.04) 0%, transparent 50%);
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-1deg);
+  }
+}
+
+@keyframes floatMedium {
+  0%, 100% {
+    transform: translateY(-50%) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(calc(-50% - 12px)) rotate(1.5deg) scale(1.02);
+  }
+}
+
+@keyframes steamDrift {
+  0% {
+    transform: translateY(0px) scaleX(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: translateY(-14px) scaleX(1.08);
+    opacity: 0.65;
+  }
+  100% {
+    transform: translateY(0px) scaleX(1);
+    opacity: 0.35;
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 7s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: floatMedium 8s ease-in-out infinite;
+}
+
+.animate-steam {
+  animation: steamDrift 6s ease-in-out infinite;
 }

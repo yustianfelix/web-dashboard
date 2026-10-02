@@ -1,34 +1,50 @@
 [
   {
     "id": 1,
-    "name": "Espresso Beans (1kg)",
+    "name": "House Blend Espresso Beans (1kg)",
     "status": "In Stock",
     "inStock": true,
-    "category": "Coffee Supply",
+    "category": "Signature Coffee",
     "stockCount": 142
   },
   {
     "id": 2,
-    "name": "Pour Over Kits",
+    "name": "Ethiopia Guji Single Origin (250g)",
+    "status": "In Stock",
+    "inStock": true,
+    "category": "Single Origin",
+    "stockCount": 64
+  },
+  {
+    "id": 3,
+    "name": "Pour Over V60 Drip Kits",
     "status": "In Stock",
     "inStock": true,
     "category": "Brew Equipment",
     "stockCount": 48
   },
   {
-    "id": 3,
-    "name": "Ceramic Mugs",
+    "id": 4,
+    "name": "Artisan Matte Ceramic Mugs",
     "status": "Low Stock",
     "inStock": false,
-    "category": "Merchandise",
+    "category": "Cafe Merchandise",
     "stockCount": 6
   },
   {
-    "id": 4,
-    "name": "Cold Brew Filters",
+    "id": 5,
+    "name": "Cold Brew Steep Filters (Pack of 50)",
     "status": "In Stock",
     "inStock": true,
-    "category": "Accessories",
+    "category": "Brew Accessories",
     "stockCount": 85
+  },
+  {
+    "id": 6,
+    "name": "Sumatra Mandheling Dark Roast (250g)",
+    "status": "In Stock",
+    "inStock": true,
+    "category": "Single Origin",
+    "stockCount": 52
   }
 ]
